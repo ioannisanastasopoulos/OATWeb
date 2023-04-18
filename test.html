@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Parallax Scrolling Example</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			height: 2000px; /* Set a height for the body so that the parallax effect is visible */
+			background-image: url('assets/ia.jpg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed; /* This makes the background image fixed so that it doesn't move when scrolling */
+		}
+		.container {
+			position: relative;
+			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+			text-align: center;
+		}
+		h1 {
+			font-size: 64px;
+			margin: 0;
+		}
+		p {
+			font-size: 24px;
+			line-height: 1.5;
+			max-width: 800px;
+			margin: 20px 0;
+			padding: 0 20px;
+			background-color: rgba(0, 0, 0, 0.5); /* This creates a semi-transparent background for the text */
+		}
+		.background {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-image: url('assets/ia.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			z-index: -1; /* This sets the background image behind the rest of the content */
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Parallax Scrolling Example</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel metus et nunc eleifend dictum ac id est. Nullam id enim magna. Nullam vel ex eu elit pharetra tempor. Etiam vitae lectus ante. Nam eu magna leo. Donec vitae neque ac tellus convallis posuere vel in nisi. Cras posuere dignissim sagittis. Quisque sed libero est.</p>
+	</div>
+	<div class="background"></div>
+</body>
+</html>

@@ -12,7 +12,7 @@
     <div class="container" >
         <div class = "box2" id = "Start">
             <h1>Introducing an Open-source Adaptive Tutoring System to Accelerate Learning Sciences Experimentation</h1>
-            <p>Learning @ Scale has embraced movements that spread access to education through open and free platforms of learning. In this tutorial, we introduce OATutor (presented at CHI’23 [1]), the field’s first free and open-source adaptive tutoring system based on ITS principles and designed for rapid experimentation. The MIT-licensed platform can be configured and deployed to git-pages in only a few clicks and supports BKT mastery-based adaptive problem selection. We demonstrate, with hands-on tutorials, how the system can be used to rapidly run A/B experiments, analyze the data, and publish the entire tutor, content, and analysis scripts to github to facilitate unprecedented ease of replication and transparency, as demonstrated in a recent study comparing ChatGPT generated hints to human-tutor hints [2]. Our four-part tutorial will include how to add lessons to the system and link to them from assignments in a MOOC platform or LMS via LTI. The structured JSON format of the four CC BY courses worth of content released with OATutor opens up avenues for researchers to apply new and existing educational data mining and NLP techniques (e.g., KC tagging) and rapidly evaluate the impact of any subsequent changes on learners with an experiment.</p>
+            <p>This hands-on tutorial at L@S 2023 will cover rapid experimentation, content authoring, and LMS integration of an open-source adaptive tutor, OATutor. This half-day tutorial will be held on July 20th in-person in Copenhagen, Denmark.</p>
 
         </div>
     </div>
@@ -20,30 +20,20 @@
 	<header id="header">
         <nav>
         <img src = "assets/l@s2023_banner.png">
-		<a href="#Start"><h1>Accelerate Learning Sciences Experimentation with OATutor</h1></a>
-            <a href="#Agenda">Agenda</a>
-			<a href="#Content">Content</a>
-			<a href="#target">Intended Audience</a>
-            <a href="#outline">Outline</a>
-			<a href="#team">Organizers</a>
-            <a href="#References">References</a>
-            <div class="dropdown">
-                <button class="dropbtn">OATutor 
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="index.html">Home Page</a>
-                  <a href="aied.html">AIED</a>
-                </div>
-              </div> 
+        <a href="index.html">Home Page</a>
+        <a href="aied.html">AIED</a>
 		</nav>
 	</header>
 
 
 
 	<div class="container">
+    <div class = "box1" id = "Background">
+        <h2>Background</h2>
+        <p>Learning @ Scale has embraced movements that spread access to education through open and free platforms of learning. In this tutorial, we introduce OATutor (presented at CHI’23 [1]), the field’s first free and open-source adaptive tutoring system based on ITS principles and designed for rapid experimentation. The MIT-licensed platform can be configured and deployed to git-pages in only a few clicks and supports BKT mastery-based adaptive problem selection. We demonstrate, with hands-on tutorials, how the system can be used to rapidly run A/B experiments, analyze the data, and publish the entire tutor, content, and analysis scripts to github to facilitate unprecedented ease of replication and transparency, as demonstrated in a recent study comparing ChatGPT generated hints to human-tutor hints [2]. Our four-part tutorial will include how to add lessons to the system and link to them from assignments in a MOOC platform or LMS via LTI. The structured JSON format of the four CC BY courses worth of content released with OATutor opens up avenues for researchers to apply new and existing educational data mining and NLP techniques (e.g., KC tagging) and rapidly evaluate the impact of any subsequent changes on learners with an experiment.</p>
 
-    <div class = "box1" id= "Agenda">
+    </div>
+    <div class = "box2" id= "Agenda">
         <h2>Agenda</h2>
             <h3>Introduction (20 Minutes)</h3>
             <ul>
@@ -75,7 +65,7 @@
             <p>Our planned activities are designed around the assumption of two 2.5 hour sessions but can be adapted based on the allocation of more or less time.</p>
     </div>
 
-    <div class = "box2" id= "Content">
+    <div class = "box1" id= "Content">
         <h2 >Content</h2>
 		<h3>Tutorial on OATutor Research Capabilities</h3>
 		<ul>
@@ -99,24 +89,11 @@
 		</ul>
     </div>
 
-    <div class = "box1" id = "target">
+    <div class = "box2" id = "target">
 		<h2> Intended Audience </h2>
 		<p>Researchers who wish to conduct A/B testing of computer tutoring and adaptive learning approaches, educators who wish to integrate adaptive content in their courses, HCI researchers, adaptive learning and AI researchers who wish to build upon the open-source tutor and extend its capabilities (e.g., to support programming, AI facilitated supports at scale).</p>
         <h3>Requirements for Participation:</h3>
         <p>Participants should bring a laptop to participate in the hands-on exercises. Some exercises will require no background knowledge, such as in the Content Creation Tutorial, while others will benefit from minimal coding experience.</p>
-    </div>
-    
-    <div class="box2" id="outline">
-        <h2>4-Page Paper Outline</h2>
-        <ul>
-            <li> Highlighting the independence of running the tutor (all front end/run on github)</li>
-            <li>Canvas integration features</li>
-            <li>Basic ITS principles it was based on</li>
-            <li>CC BY 4.0 Content library that can be remixed (by teachers/researchers)</li>
-            <li>A/B testing + logging (not sure if this should be demonstrated via qualtrics)</li>
-            <li>Can be done at a low-level with built in React code abstractions (i.e., for algorithm or other internal logic-based experiments)</li>
-            <li>Can be done at high-level, integrating with a survey platform like Qualtrics for random assignment and design flow (for content-based experiments)</li>
-        </ul>
     </div>
     <div class = "box1" id = "team">
 		<h2> Organizers </h2>
