@@ -2,38 +2,153 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Conducting Rapid Experimentation with an Open-source Adaptive Tutoring System</title>
-    <link href="css/style.css" rel="stylesheet">      
-    <link rel="stylesheet" href="node_modules/github-fork-ribbon-css/gh-fork-ribbon.css" /> 
-    <script src="https://www.youtube.com/iframe_api"></script>
-    <script type="text/javascript" src="script.js"></script>
+	<title>OATutor</title>
+	<style>
+		body {
+			font-family: 'Titillium Web', sans-serif;
+			margin: 0;
+			padding: 0;
+			background-image: url('assets/background.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			animation: parallax 10s infinite;
+		}
+
+		header {
+          text-align: center;
+		  position: fixed;
+		  top: -60px;
+		  width: 100%;
+		  transition: top 0.3s;
+		}
+
+		header.visible {
+		  top: 0;
+		}
+        nav {
+            background-color: #3f51b5;
+            color: #fff;
+            position: fixed;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 5px;
+            justify-content:space-around;
+        }
+        nav h1 {
+            left: 0;
+            margin: 0;
+            font-size: 100%;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 75%;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav img {
+            height: 75%;
+            padding: 20px;
+        }
+        nav a:hover {
+            border-bottom: 2px solid #fff;
+        }
+
+		h1, h3 {
+			text-align: center;
+			color: white;
+			margin: 0 auto;
+			font-weight: normal;
+		}
+
+		h1 {
+			font-size: 6rem;
+			margin-top: 100px;
+		}
+
+		h3 {
+			font-size: 2.25rem;
+			margin-top: 30px;
+		}
+
+		.news {
+			background-color: white;
+			padding: 20px;
+			margin: 50px 20%;
+			border-radius: 10px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+		
+		iframe {
+			width: 50%;
+			height: 300;
+			display: block;
+			margin: 0 auto;
+		}
+
+		#container {
+			padding: 50px 0;
+		}
+        #title {
+            padding: 50px 0;
+        }
+        @keyframes parallax {
+		  0% {
+		    background-image: url('assets/background.jpg');
+		  }
+		  50% {
+		    background-image: url('assets/back.jpg');
+		  }
+		  100% {
+		    background-image: url('assets/background.jpg');
+		  }
+		}
+		
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
-
-
 <body>
-    <div class="container" >
-        <div class = "box2" id = "Start">
-            <img src = "assets/aied.png">
-            <h1>Conducting Rapid Experimentation with an Open-source Adaptive Tutoring System</h1>
-            <p>This hands-on tutorial at AIED 2023 will cover rapid experimentation, content authoring, and LMS integration of an open-source adaptive tutor, OATutor. This full-day tutorial will be held on July 3rd in-person in Tokyo, Japan and is limited to 30 participants.</p>
-
-        </div>
-        <div id="video-background"></div>
-    </div>
-
 	<header id="header">
         <nav>
-        <a href="#teachers">For Teachers</a>
-        <a href="#researchers">For Researchers</a>
-        <a href="aied.html">AIED</a>
-        <a href="las.html">L@S</a>
-        <a href="https://github.com/CAHLR/OATutor">
-            <img src="assets/fork.jpg" alt="Fork me on GitHub" width="25", height="25">
-        </a>
+	        <a href="#teachers.html">For Teachers</a>
+	        <a href="#researchers.html">For Researchers</a>
+	        <a href="aied.html">AIED</a>
+	        <a href="las.html">L@S</a>
+	        <a href="https://github.com/CAHLR/OATutor">
+	            <img src="assets/fork.jpg" alt="Fork me on GitHub" width="25", height="25">
+	        </a>
 		</nav>
 	</header>
+    <div id="container">
+        <div id="title">
+            <h1>OATutor</h1>
+        <h3>An Open Source Adaptive Tutoring System</h3>
+        </div>
+        <div id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1_dR9mSICNU" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+	<script>
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("header").classList.add("visible");
+			} else {
+				document.getElementById("header").classList.remove("visible");
+			}
+			prevScrollpos = currentScrollPos;
+		}
+	</script>
 </body>
 </html>
-		
-	
