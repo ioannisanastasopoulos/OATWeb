@@ -373,3 +373,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .scaled-image {
+    transform: scale(2);
+  }
