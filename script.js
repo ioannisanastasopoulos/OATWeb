@@ -32,11 +32,11 @@ window.addEventListener('scroll', function() {
   var header = document.querySelector('header');
   
   // Check if the scroll position is greater than 50 pixels
-  if (window.scrollY > 50) {
+ // if (window.scrollY > 50) {
     // If so, add the 'hidden' class to the header element
-    header.classList.add('hidden');
-  } else {
+  //  header.classList.add('hidden');
+ // } else {
     // Otherwise, remove the 'hidden' class from the header element
-    header.classList.remove('hidden');
-  }
-});
+   // header.classList.remove('hidden');
+//  }
+//});
