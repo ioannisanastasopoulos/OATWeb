@@ -28,7 +28,7 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-window.addEventListener('scroll', function() {
+window.addEventListener(function() {
   var header = document.querySelector('header');
   
   // Check if the scroll position is greater than 50 pixels
