@@ -28,8 +28,7 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-window.addEventListener(function() {
-  var header = document.querySelector('header');
+var header = document.querySelector('header');
   
   // Check if the scroll position is greater than 50 pixels
  // if (window.scrollY > 50) {
